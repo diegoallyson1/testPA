@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="funcoes.js"></script>
+    <script src="adicionar.js"></script>
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <title>Formulário</title>
+</head>
+<body>
+    
+    <div>
+        <h1 id="titulo">Cadastro</h1>
+        <br>
+    </div>
+
+    <form>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" name="nome" placeholder="Diego Allyson Pires Macedo" id="nome" required> 
+            </div>
+    
+            <div class="campo">
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf"  placeholder="Ex.: 000.000.000-00 " id="cpf" maxlength="14" onkeyup="mascaraCpf()" required>
+                
+            </div>
+           
+            <div class="campo">
+                <p>
+                Endereço
+                </p>
+                <label>Rua:</label>
+                <input type="text" name="rua" placeholder="Ex.: Rua: Ayrton Senna" id="rua">
+               
+                <label>Numero:</label>
+                <input type="text" name="numero" placeholder="Ex.: 55 " id="numero">
+                
+                <label>Bairro:</label>
+                <input type="text" name="bairro" placeholder="Ex.: Nova Parnamirim" id="bairro">
+                
+                <label>Complemento:</label>
+                <input type="text" name="complemento" placeholder="Ex.: Proximo ao Farmácia PagueMenos" id="complemento">
+                
+                <p>Estado:</p>
+                <select id="estado" onchange="buscaCidades(this.value)">
+                    <option value="">Selecione o Estado</option>
+                    <option value="AC">Acre</option> 
+                    <option value="AL">Alagoas</option> 
+                    <option value="AM">Amazonas</option> 
+                    <option value="AP">Amapá</option> 
+                    <option value="BA">Bahia</option> 
+                    <option value="CE">Ceará</option> 
+                    <option value="DF">Distrito Federal</option> 
+                    <option value="ES">Espírito Santo</option> 
+                    <option value="GO">Goiás</option> 
+                    <option value="MA">Maranhão</option> 
+                    <option value="MT">Mato Grosso</option> 
+                    <option value="MS">Mato Grosso do Sul</option> 
+                    <option value="MG">Minas Gerais</option> 
+                    <option value="PA">Pará</option> 
+                    <option value="PB">Paraíba</option> 
+                    <option value="PR">Paraná</option> 
+                    <option value="PE">Pernambuco</option> 
+                    <option value="PI">Piauí</option> 
+                    <option value="RJ">Rio de Janeiro</option> 
+                    <option value="RN">Rio Grande do Norte</option> 
+                    <option value="RS">Rio Grande do Sul</option> 
+                    <option value="RO">Rondônia</option>                     
+                    <option value="RR">Roraima</option> 
+                    <option value="SC">Santa Catarina</option> 
+                    <option value="SE">Sergipe</option> 
+                    <option value="SP">São Paulo</option> 
+                    <option value="TO">Tocantins</option> 
+                 </select>
+                 
+                 <p>Cidade:</p>
+                 <select id="cidade">
+                 </select>   
+            </div>
+    
+          
+            <div class="campo">
+                <label for="celular">Celular:</label>
+                <input type="text" name="celular" placeholder="Ex.: (00) 0000-0000"  id="celular" onkeyup="mascaraCel()" >
+                
+            </div>
+        
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Ex.: diego_allyson_@hotmail.com" id="email">
+            </div>
+
+        </fieldset>
+
+        <button onClick="adicionarUsuario()">Adicionar</button>
+        <button type="reset">Limpar</button>
+
+    <br><br>
+    <p>Lista de Usuario</p>
+    <br>
+    <div id="listaUsuario"></div>
+
+</form>
+</body>
+</html>

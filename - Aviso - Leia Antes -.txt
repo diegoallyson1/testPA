@@ -1,0 +1,14 @@
+Infelizmente tem um erro que não consegui resolver, 
+não está conseguindo adicionar o nome e o cpf, 
+quando coloca os dois não consegue adicionar,
+eu acho que deve ser por conta do required no HTML, 
+tentei retirar mas permanece o erro.
+Mas quando coloca o nome e os outros dados 
+ou o CPF e os outros dados adiciona direitinho 
+e aparece na lista dos adicionados.
+
+Enfim, agradeço a oportudidade e caso
+não seja contratado espero que me diga
+onde foi meu erro no código. =)
+
+Att Diego Allyson

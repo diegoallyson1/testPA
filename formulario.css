@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#titulo {
+    font-family: sans-serif;
+    color: #F4A259;
+    margin-left: 7%;
+}
+
+fieldset {
+    border: 0;
+}
+
+body{
+    background-color: #5B8E7D;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: white;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+.grupo:after {
+    clear: both;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color:white;
+    display: block;
+}
+
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #405952;
+    border-radius: 5px;
+}
